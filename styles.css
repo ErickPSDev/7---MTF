@@ -1,0 +1,234 @@
+/* Universal Styles */
+html {
+    font-family: 'Roboto Condensed';   
+    box-sizing: border-box; /*Set the width to the 100%*/
+}
+
+* { /*Remove Margin and padding to the whole document and their items inside */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+  font-size: 20px;
+  color: #000052;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+.main-content {
+    position: relative;
+    top: 7.3125rem; /* To offset for fixed header. */
+  }
+
+  .button {
+  border-radius: 4px;
+  background-color: tomato;
+  color: white;
+}
+
+/* Header - Desktop */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem 0.5rem 0;
+}
+
+header .desktop .logo {
+    display: flex;
+  }
+
+.logo {
+    width: 8rem;
+    padding-left: 1rem;
+
+}
+/* Set nav ul elements horizontaly */
+header nav ul {
+    display: flex;
+    list-style: none;   /*Remove ul dots*/
+  }
+
+nav li {
+  padding-left: 3.5rem;
+  font-size:x-large;
+}
+
+  
+nav li:hover a {
+    color: darkblue;
+  }
+
+header .mobile {
+    display: none;
+  }
+
+
+/* Header Mobile */
+@media only screen and (min-widht: 320px) and (max-widht: 480px) {
+
+}
+
+
+/* Main Section Desktop */
+
+.contact-bk {
+    background-image: url('/resources/MTF-logo.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 43.5rem; /*Image centered*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.banner { /*Text box over the image*/
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;
+    background-color: #000052;
+    position: relative;
+    top: 12.625rem;
+
+}
+
+.banner .content {
+    width: 28.625rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+}
+
+.banner-header h1 {
+    font-size: 2.25rem;
+
+}
+
+.banner-header h2 {
+    font-size: 1.50rem;
+    font-style: italic;
+}
+
+.banner button {
+    margin-top: 1.625rem;
+    padding: 1.25rem 7.25rem;
+    background-color: tomato;
+    font-weight:bolder;
+    cursor: pointer;
+    color: white;
+    font-size: xx-large;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.banner button:hover {
+    color: darkblue;
+  }
+
+    .banner button:active {
+    background-color: darkblue;
+    color: #ffffff;
+  }
+
+/* Projects Section - Desktop */
+
+
+.projects-header {
+  text-align: center;
+}
+
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.project img {
+  width: 20rem;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.project span { /* Fix text in order to have a perfec flex items aligment */
+  padding: 5px;
+  min-width: 200px;
+  max-width: 200px;
+  overflow-wrap: break-word;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Team Section */
+
+
+.team-header {
+  text-align: center;
+}
+
+.team-gallery {
+  display: flex;
+  justify-content: center;
+  background-image: url('https://as2.ftcdn.net/v2/jpg/03/13/42/77/1000_F_313427726_X0r5hi2o1O1z15dm8shEun9iYbYvR3tp.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.team {
+  padding: 10px;
+  color: white;
+  flex-basis: 280px;
+}
+
+.team img {
+  width: 200px;
+}
+
+
+/* Contact Section */
+
+.contact-container .content {
+  text-align: center;
+}
+
+/* Footer Section*/
+
+footer {
+  text-align: center;
+}
